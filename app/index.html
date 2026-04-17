@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+  <title>FreshCart | Colorful Grocery Store</title>
+  <link rel="stylesheet" href="styles.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6 -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+<div class="store-wrapper">
+  <!-- top bar -->
+  <div class="top-bar">
+    <div class="logo">
+      <i class="fas fa-leaf"></i>
+      <h1>FreshCart</h1>
+    </div>
+    <div class="nav-links">
+      <a href="#">Shop</a>
+      <a href="#">Offers</a>
+      <a href="#">Organic</a>
+      <a href="#">Delivery</a>
+      <div class="cart-icon" id="cartIconBtn">
+        <i class="fas fa-shopping-basket"></i>
+        <span id="cartCount">0</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- hero -->
+  <div class="hero">
+    <div class="hero-text">
+      <div class="badge"><i class="fas fa-apple-alt"></i> 100% farm fresh</div>
+      <h2>Fresh groceries <span>delivered</span> to your doorstep</h2>
+      <p>Farm-fresh fruits, organic veggies, dairy & more. Taste the rainbow of health!</p>
+      <div class="btn-group">
+        <button class="btn-primary" id="shopNowBtn"><i class="fas fa-cart-shopping"></i> Shop now</button>
+        <button class="btn-outline"><i class="fas fa-play"></i> Watch story</button>
+      </div>
+    </div>
+    <div class="hero-img">
+      <i class="fas fa-apple-alt" style="font-size: 5rem; color:#f97316; background:#fff0e0; padding:1rem; border-radius: 80px;"></i>
+      <i class="fas fa-carrot" style="font-size: 4rem; color:#facc15; margin-left: -1rem;"></i>
+      <i class="fas fa-cheese" style="font-size: 4rem; color:#fbbf24;"></i>
+    </div>
+  </div>
+
+  <!-- category colorful section -->
+  <div class="category-section">
+    <div class="section-header">
+      <h3>🍅 Shop by category</h3>
+      <a href="#">View all <i class="fas fa-arrow-right"></i></a>
+    </div>
+    <div class="category-grid">
+      <div class="cat-card"><div class="cat-icon"><i class="fas fa-apple-alt"></i></div><h4>Fruits</h4><p>juicy & sweet</p></div>
+      <div class="cat-card"><div class="cat-icon"><i class="fas fa-carrot"></i></div><h4>Vegetables</h4><p>crunchy fresh</p></div>
+      <div class="cat-card"><div class="cat-icon"><i class="fas fa-bread-slice"></i></div><h4>Bakery</h4><p>artisan bread</p></div>
+      <div class="cat-card"><div class="cat-icon"><i class="fas fa-cheese"></i></div><h4>Dairy</h4><p>creamy & pure</p></div>
+      <div class="cat-card"><div class="cat-icon"><i class="fas fa-fish"></i></div><h4>Seafood</h4><p>ocean fresh</p></div>
+    </div>
+  </div>
+
+  <!-- featured products -->
+  <div class="products-section">
+    <div class="section-header">
+      <h3>🔥 Featured this week</h3>
+      <a href="#">See more deals</a>
+    </div>
+    <div class="product-grid" id="productGrid"></div>
+  </div>
+
+  <!-- colorful offer banner -->
+  <div class="offer-banner">
+    <div class="offer-text">
+      <h3><i class="fas fa-tag"></i> 20% OFF on first order</h3>
+      <p>Use code: FRESH20 | free delivery above $35</p>
+    </div>
+    <div class="countdown" id="demoTimer">
+      <span>🔥</span> <span id="timerDisplay">24:00:00</span>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="footer-content">
+      <div class="footer-col">
+        <h4><i class="fas fa-store"></i> FreshCart</h4>
+        <p>Colorful groceries, healthy life.</p>
+        <div class="social">
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-twitter"></i>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Quick links</h4>
+        <a href="#">About us</a>
+        <a href="#">Contact</a>
+        <a href="#">FAQs</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p><i class="fas fa-phone"></i> +1 888 425 432</p>
+        <p><i class="fas fa-envelope"></i> hello@freshcart.com</p>
+      </div>
+    </div>
+    <div class="copyright">
+      © 2025 FreshCart — vibrant & fresh since today
+    </div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
