@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: grocery-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: grocery
+  template:
+    metadata:
+      labels:
+        app: grocery
+    spec:
+      containers:
+      - name: grocery-container
+        image: santhosh31072006/grocery-app:latest
+        ports:
+        - containerPort: 80
